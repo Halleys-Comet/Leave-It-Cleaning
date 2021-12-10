@@ -1,5 +1,5 @@
 from flask import Flask
-from app.routes import home, services
+from app.routes import home, services, about
 
 def create_app(test_config=None):
   # set up app config
@@ -9,12 +9,11 @@ def create_app(test_config=None):
     SECRET_KEY='super_secret_key'
   )
 
-  @app.route('/hello')
-  def hello():
-    return 'hello world'
+  
 
   # register routes
   app.register_blueprint(home)
   app.register_blueprint(services)
+  app.register_blueprint(about)
 
   return app

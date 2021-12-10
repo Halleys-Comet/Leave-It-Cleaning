@@ -3,8 +3,46 @@
   margin: 0;
   padding: 8px;
   overflow: hidden;
+  background-color:#ffb3d9;
 }
 
 a {
   padding: 8px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ff66b3;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-image {
+  background-image: linear-gradient(to right, rgba(100, 100, 100, 0.3), rgba(0, 0, 0, 0.1)),url(../Images/leaveittome-front-page.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0 250px 0;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
 }

@@ -6,7 +6,9 @@
   <section class="banner-image"></section>
   <div class="row">
     <div class="column">
-      <div class="card">Standard Cleaning</div>
+      <div class="card"><img src="{{url_for('static', filename='standard.jpg')}}" alt="standard clean">
+        <div>Standard Cleaning</div>
+      </div>
     </div>
     <div class="row">
       <div class="column">
@@ -17,7 +19,14 @@
       <div class="column">
         <div class="card">Carpet Cleaning</div>
       </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">Commerical Cleaning</div>
+        </div>
+      </div>
 
     </div>
 
     {% endblock %}
+
+  
